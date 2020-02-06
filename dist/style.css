@@ -1,0 +1,45 @@
+.menu {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+}
+
+.menu li:not(:last-child) {
+  margin-right: 5%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-family: 'Roboto';
+}
+
+.menu li a:hover {
+  border-bottom: 2px solid red;
+}
+
+nav {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.logo {
+  width: 20%;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.headliner {
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto';
+  font-weight: bold;
+  color: white;
+  background: url(background.jpg) no-repeat center center fixed;
+}
