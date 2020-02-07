@@ -1,3 +1,7 @@
+* {
+  font-family: 'Roboto';
+}
+
 .menu {
   list-style-type: none;
   display: flex;
@@ -42,4 +46,27 @@ nav {
   font-weight: bold;
   color: white;
   background: url(background.jpg) no-repeat center center fixed;
+  text-align: center;
+  text-shadow: 2px 2px 2px rgba(150, 150, 150, 1);
+}
+
+.headliner h2 {
+  font-size: 3rem;
+}
+
+.headliner h4 {
+  font-size: 1.3rem;
+}
+
+/* FOOTER */
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  background-color: #FDD692;
+  border: 0;
+  padding: 0;
+  height: 200px;
 }
