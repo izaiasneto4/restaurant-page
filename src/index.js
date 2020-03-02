@@ -1,1 +1,2 @@
-console.log('haha lol')
+import './styles.css';
+import './reset.css';
