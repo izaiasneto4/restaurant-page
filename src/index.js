@@ -7,8 +7,7 @@ const contactBtn = document.querySelector('.contact-btn');
 const mainSection = document.querySelector('.main');
 
 const toggleContent = (content) => {
-  mainSection.innerHTML = '';
-  mainSection.innerHTML += content;
+  mainSection.innerHTML = content;
 };
 
 menuBtn.addEventListener('click', () => toggleContent(menu));
