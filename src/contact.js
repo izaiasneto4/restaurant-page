@@ -14,5 +14,11 @@ const contact = `
 </main>
 `;
 
+const contact = () => {
+  const mainForm = document.createElement('main').classList.add('main-form');
+  const form = document.createElement('form');
+
+}
+
 
 export default contact;
