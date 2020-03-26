@@ -17,7 +17,19 @@ const contact = `
 const contact = () => {
   const mainForm = document.createElement('main').classList.add('main-form');
   const form = document.createElement('form');
+  const nameLabel = document.createElement('label').setAttribute('for', 'name');
+  const nameInput = document.createElement('input').setAttribute('type', 'text').setAttribute('name', 'name');
+  const lNameLabel = document.createElement('label').setAttribute('for', 'last-name');
+  const lNameInput = document.createElement('input').setAttribute('type', 'text').setAttribute('name', 'last-name');
+  const emailLabel = document.createElement('label').setAttribute('for', 'email');
+  const emailInput = document.createElement('input').setAttribute('name', 'email');
+  const messageLabel = document.createElement('label').setAttribute('for', 'message');
+  const message = document.createElement('textarea').setAttribute('cols', 30).setAttribute('rows', 10).setAttribute('name', 'message');
+  const submit = document.createElement('input').setAttribute('type', 'submit');
 
+  mainForm.appendChild(form);
+
+  return mainForm;
 }
 
 
