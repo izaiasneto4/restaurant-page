@@ -1,44 +1,71 @@
-const menu = `
-<main class="menu">
-<div class="menu-table">
-  <table>
-    <tr>
-      <th>Dish</th>
-      <th>Price</th>
-    </tr>
+const menu = () => {
+  const mainMenu = document.createElement('main');
+  mainMenu.classList.add('menu');
 
-    <tr>
-      <td>Onigri</td>
-      <td>$5</td>
-    </tr>
+  const menuTableDiv = document.createElement('div');
+  menuTableDiv.classList.add('menu-table');
 
-    <tr>
-      <td>Sushi</td>
-      <td>$25</td>
-    </tr>
-    
-    <tr>
-      <td>Okonomiyaki</td>
-      <td>$10</td>
-    </tr>
+  mainMenu.appendChild(menuTableDiv);
 
-    <tr>
-      <td>Takoyaki</td>
-      <td>$10</td>
-    </tr>
+  const table = document.createElement('table');
+  menuTableDiv.appendChild(table);
 
-    <tr>
-      <td>Yaki udon</td>
-      <td>$15</td>
-    </tr>
+  const tr1 = document.createElement('tr');
+  table.appendChild(tr1);
 
-    <tr>
-      <td>Yaki soba</td>
-      <td>$15</td>
-    </tr>
-  </table>
-</div>
-</main>
-`;
+  const dish = document.createElement('th');
+  dish.innerHTML = 'Dish';
+  tr1.appendChild(dish);
+
+  const price = document.createElement('th');
+  price.innerHTML = 'Price';
+  tr1.appendChild(price);
+
+  const tr2 = document.createElement('tr');
+  table.appendChild(tr2);
+
+  const onigri = document.createElement('th');
+  onigri.innerHTML = 'Onigri';
+  tr2.appendChild(onigri);
+
+  const onigriPrice = document.createElement('th');
+  onigriPrice.innerHTML = '$5';
+  tr2.appendChild(onigriPrice);
+
+  const tr3 = document.createElement('tr');
+  table.appendChild(tr3);
+
+  const sushi = document.createElement('th');
+  sushi.innerHTML = 'Sushi';
+  tr3.appendChild(sushi);
+
+  const sushiPrice = document.createElement('th');
+  sushiPrice.innerHTML = '$20';
+  tr3.appendChild(sushiPrice);
+
+  const tr4 = document.createElement('tr');
+  table.appendChild(tr4);
+
+  const okonomiyaki = document.createElement('th');
+  okonomiyaki.innerHTML = 'Okonomiyaki';
+  tr4.appendChild(okonomiyaki);
+
+  const okonomiyakiPrice = document.createElement('th');
+  okonomiyakiPrice.innerHTML = '$10';
+  tr4.appendChild(okonomiyakiPrice);
+
+  const tr5 = document.createElement('tr');
+  table.appendChild(tr5);
+
+  const takoyaki = document.createElement('th');
+  takoyaki.innerHTML = 'Takoyaki';
+  tr5.appendChild(takoyaki);
+
+  const takoPrice = document.createElement('th');
+  takoPrice.innerHTML = '$10';
+  tr5.appendChild(takoPrice);
+
+  return mainMenu;
+};
 
 export default menu;
