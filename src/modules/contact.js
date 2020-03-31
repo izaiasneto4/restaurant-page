@@ -1,6 +1,6 @@
 
 const contact = () => {
-  const mainForm = document.createElement('main');
+  const mainForm = document.createElement('div');
   mainForm.classList.add('main-form');
   const form = document.createElement('form');
   mainForm.appendChild(form);

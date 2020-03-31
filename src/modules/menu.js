@@ -1,5 +1,5 @@
 const menu = () => {
-  const mainMenu = document.createElement('main');
+  const mainMenu = document.createElement('div');
   mainMenu.classList.add('menu');
 
   const menuTableDiv = document.createElement('div');
